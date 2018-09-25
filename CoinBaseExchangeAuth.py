@@ -8,6 +8,7 @@ from requests.auth import AuthBase
 
 # Create custom authentication for Exchange. Saves the API Key, Secret Key and Passphrase
 class CoinbaseExchangeAuth(AuthBase):
+#create the coinbase 
 
     def __init__(self, api_key, secret_key, passphrase):
         self.api_key = api_key

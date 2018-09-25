@@ -3,6 +3,7 @@ from UserSocket import UserSocket
 import json
 
 class OrderBook:
+    #order book data info
 
     def __init__(self, coinBaseExchangeAuth):
         self.OrderBookUserSocket = UserSocket(coinBaseExchangeAuth)

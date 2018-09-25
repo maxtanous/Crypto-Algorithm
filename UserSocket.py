@@ -11,6 +11,7 @@ import CoinBaseExchangeAuth
 
 
 class UserSocket():
+    #user Socket for subsceibing to channels 
 
 
     def __init__(self, coinBaseExchangeAuth):

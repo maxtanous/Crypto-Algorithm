@@ -4,6 +4,7 @@ from threading import Timer
 
 
 class AuthenticatedClient:
+    #authenicated client reauests.
 
     def __init__(self, CoinBaseExchangeAuth, MarketSocket, api_url):
         self.auth = CoinBaseExchangeAuth

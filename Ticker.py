@@ -3,7 +3,7 @@ from UserSocket import UserSocket
 import json
 
 class Ticker:
-
+#ticker channel for quick price and volume data
     def __init__(self, coinBaseExchangeAuth):
         self.TickerUserSocket = UserSocket(coinBaseExchangeAuth)
         self.running = False

@@ -8,7 +8,7 @@ import datetime
 
 
 class Algorithm:
-
+" This is the class to implement algorithms. Currently running an RSI Algorithm."
     #Time given in seconds
     UPDATE_INTERVAL = .5
     NUM_SECONDS_BUY_OR_SELL = 10
@@ -18,7 +18,9 @@ class Algorithm:
     def __init__(self, alg, AuthClient, dollar_value, typeCoin):
 
         self.AuthClient = AuthClient
+        #run market data
         self.MarketData = MarketData(typeCoin, AuthClient.getExchangeAuth(), UPDATE_INTERVAL, SIZE_PRICE_TABLE)
+        #currently running dummy
         self.alg = alg
         self.typeCoin = typeCoin
         self.dollar_value = dollar_value
